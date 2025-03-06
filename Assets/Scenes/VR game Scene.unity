@@ -122,6 +122,104 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &96931649
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1391300188}
+    m_Modifications:
+    - target: {fileID: 2012181715459153768, guid: ae1968658b9687b47976fe86c062168f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012181715459153768, guid: ae1968658b9687b47976fe86c062168f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012181715459153768, guid: ae1968658b9687b47976fe86c062168f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012181715459153768, guid: ae1968658b9687b47976fe86c062168f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012181715459153768, guid: ae1968658b9687b47976fe86c062168f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012181715459153768, guid: ae1968658b9687b47976fe86c062168f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012181715459153768, guid: ae1968658b9687b47976fe86c062168f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012181715459153768, guid: ae1968658b9687b47976fe86c062168f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012181715459153768, guid: ae1968658b9687b47976fe86c062168f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012181715459153768, guid: ae1968658b9687b47976fe86c062168f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212361887338514247, guid: ae1968658b9687b47976fe86c062168f, type: 3}
+      propertyPath: m_Name
+      value: Climb Teleport Arrow
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae1968658b9687b47976fe86c062168f, type: 3}
+--- !u!4 &96931650 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2012181715459153768, guid: ae1968658b9687b47976fe86c062168f, type: 3}
+  m_PrefabInstance: {fileID: 96931649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &257180642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 257180643}
+  m_Layer: 0
+  m_Name: LadderPlatform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &257180643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257180642}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.331177, y: 7.1953917, z: 9.971504}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1354447345}
+  - {fileID: 320879351}
+  - {fileID: 1845933908}
+  - {fileID: 1605609400}
+  - {fileID: 765951264}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &274425469
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,7 +457,7 @@ GameObject:
   - component: {fileID: 320879348}
   - component: {fileID: 320879347}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -380,11 +478,11 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 2147483648
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
   m_FocusMode: 1
-  m_CustomReticle: {fileID: 0}
+  m_CustomReticle: {fileID: 1391300187}
   m_AllowGazeInteraction: 0
   m_AllowGazeSelect: 0
   m_OverrideGazeTimeToSelect: 0
@@ -446,7 +544,9 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
-  m_AnchorTransforms: []
+  m_AnchorTransforms:
+  - {fileID: 1605609400}
+  - {fileID: 765951264}
   m_DestinationEvaluationSettings:
     m_UseConstant: 1
     m_ConstantValue:
@@ -536,11 +636,11 @@ Transform:
   m_GameObject: {fileID: 320879346}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.32, y: 3.9000006, z: 3.65}
+  m_LocalPosition: {x: -2.0111773, y: -3.295391, z: -6.321504}
   m_LocalScale: {x: 0.20276, y: 7.830603, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 257180643}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &441087506
 PrefabInstance:
@@ -890,11 +990,11 @@ Transform:
   m_GameObject: {fileID: 765951263}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70761055, z: -0, w: -0.70660275}
-  m_LocalPosition: {x: 3.595, y: 7.837, z: 3.636}
+  m_LocalPosition: {x: -1.7361772, y: 0.64160824, z: -6.3355045}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 257180643}
   m_LocalEulerAnglesHint: {x: 0, y: -269.918, z: 0}
 --- !u!1 &1078763871
 GameObject:
@@ -1298,10 +1398,42 @@ Transform:
   m_GameObject: {fileID: 1354447341}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.92, y: 3.9000006, z: 3.65}
+  m_LocalPosition: {x: -1.4111772, y: -3.295391, z: -6.321504}
   m_LocalScale: {x: 1, y: 7.830603, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 257180643}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1391300187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1391300188}
+  m_Layer: 0
+  m_Name: Clime Arrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1391300188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391300187}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 96931650}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1507994852
@@ -1435,11 +1567,11 @@ Transform:
   m_GameObject: {fileID: 1605609399}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70866334, z: -0, w: 0.7055468}
-  m_LocalPosition: {x: 3.32, y: -0.01, z: 3.6}
+  m_LocalPosition: {x: -2.0111773, y: -7.205392, z: -6.3715043}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 257180643}
   m_LocalEulerAnglesHint: {x: 0, y: -90.253, z: 0}
 --- !u!1 &1845933907
 GameObject:
@@ -1465,14 +1597,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845933907}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.871422, y: -10.420953, z: 7.5167837}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.540245, y: -17.616344, z: -2.4547205}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1887673167}
   - {fileID: 556119024}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 257180643}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1887673166
 GameObject:
@@ -1864,8 +1996,5 @@ SceneRoots:
   - {fileID: 1507994856}
   - {fileID: 274425473}
   - {fileID: 1078763872}
-  - {fileID: 1354447345}
-  - {fileID: 320879351}
-  - {fileID: 1845933908}
-  - {fileID: 1605609400}
-  - {fileID: 765951264}
+  - {fileID: 257180643}
+  - {fileID: 1391300188}
